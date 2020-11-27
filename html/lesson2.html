@@ -40,8 +40,8 @@
     <section class="header-bottom">
       <div class="header-container">
         <div class="header-logo">
-          <a href="/">
-            <img class="logo" src="/" alt="">
+          <a class="logo" href="/">
+            <img src="/" alt="">
           </a>
         </div>
         <nav class="header-menu">
@@ -53,10 +53,10 @@
         </nav>
         <div class="header-action">
           <ul>
-            <li><img src="/" alt="search"></li>
-            <li><img src="/" alt="profile"></li>
-            <li><img src="/" alt="like"></li>
-            <li><img src="/" alt="cart"></li>
+            <li><i onclick=""><img src="/" alt="search" class="btn-search"></i></li>
+            <li><i onclick=""><img src="/" alt="profile" class="btn-profile"></i></li>
+            <li><i onclick=""><img src="/" alt="favorite" class="btn-favorite"></i></li>
+            <li><i onclick=""><img src="/" alt="cart" class="btn-cart"></i></li>
           </ul>
         </div>
       </div>
@@ -65,29 +65,61 @@
   <main class="page-main">
     <section class="section-slideshow">
       <ul class="slideshow">
-        <li><img src="/" alt=""><a href="/"></a></li>
-        <li><img src="/" alt=""><a href="/"></a></li>
-        <li><img src="/" alt=""><a href="/"></a></li>
+        <li><img src="/" alt="">
+          <span class="slideshow-sub-title">SUMMER 2020</span>
+          <h3 class="slideshow-title">New Arrival Collection</h3>
+          <a class="btn btn-slideshow" href="/">Explore Now</a>
+        </li>
+        <li><img src="/" alt="">
+          <span class="slideshow-sub-title">NEW SEASON</span>
+          <h3 class="slideshow-title">Lookbook Collection</h3>
+          <a class="btn btn-slideshow" href="/">Explore Now</a>
+        </li>
+        <li><img src="/" alt="">
+          <span class="slideshow-sub-title">SUMMER SALE</span>
+          <h3 class="slideshow-title">Save up to 70%</h3>
+          <a class="btn btn-slideshow" href="/">Explore Now</a>
+        </li>
       </ul>
     </section>
     <section class="section-category">
       <div class="container">
-        <section class="section-category-1">
+        <div class="section-category-1">
           <ul>
-            <li><img src="/" alt=""><a href="/"></a></li>
+            <li>
+              <a href="/">
+                <img src="/" alt="">
+                <span class="btn btn-category">Women</span>
+              </a>
+            </li>
           </ul>
-        </section>
-        <section class="section-category-2">
+        </div>
+        <div class="section-category-2">
           <ul>
-            <li><img src="/" alt=""><a href="/"></a></li>
-            <li><img src="/" alt=""><a href="/"></a></li>
+            <li>
+              <a href="/">
+                <img src="/" alt="">
+                <span class="btn btn-category">Accessories</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="/" alt="">
+                <span class="btn btn-category">Footwear</span>
+              </a>
+            </li>
           </ul>
-        </section>
-        <section class="section-category-3">
+        </div>
+        <div class="section-category-3">
           <ul>
-            <li><img src="/" alt=""><a href="/"></a></li>
+            <li>
+              <a href="/">
+                <img src="/" alt="">
+                <span class="btn btn-category">Watches </span>
+              </a>
+            </li>
           </ul>
-        </section>
+        </div>
       </div>
     </section>
     <section class="section-product">
@@ -97,14 +129,18 @@
         <ul class="product-list">
           <li class="product-item">
             <a href="/" class="product-img">
-              <img src="" alt="">
+              <img src="/" alt="">
+              <i onclick=""><img src="/" alt="" class="wishlist"></i>
+              <span class="product-label">New</span>
+              <a class="btn btn-product" href="/">Quick View</a>
+              <a class="btn btn-product" href="/">Quick Shop</a>
             </a>
             <div class="product-info">
-              <a href="/" class="product-name">Analogue Resin Strap</a>
+              <h3><a href="/" class="product-name">Analogue Resin Strap</a></h3>
               <span class="product-price">$30.00</span>
-              <ul class="product-color">
-                <li><input type="radio" name="product-color" id="red" value="1"></li>
-                <li><input type="radio" name="product-color" id="blue" value="2"></li>
+              <ul class="color-picker">
+                <li><input type="radio" name="color-picker" id="red" value="1"></li>
+                <li><input type="radio" name="color-picker" id="blue" value="2"></li>
               </ul>
             </div>
           </li>
@@ -117,8 +153,12 @@
     <section class="section-advertise">
       <div class="container">
         <ul class="advertise">
-          <li><img src="/" alt=""><a href="/"></a></li>
-          <li><img src="/" alt=""><a href="/"></a></li>
+          <li><img src="/" alt="">
+            <a href="/"></a>
+          </li>
+          <li><img src="/" alt="">
+            <a href="/"></a>
+          </li>
         </ul>
       </div>
     </section>
@@ -129,10 +169,14 @@
         <ul class="product-list">
           <li class="product-item">
             <a href="/" class="product-img">
-              <img src="" alt="">
+              <img src="/" alt="">
+              <i onclick=""><img src="/" alt="" class="wishlist"></i>
+              <span class="product-label">New</span>
+              <a class="btn btn-product" href="/">Quick View</a>
+              <a class="btn btn-product" href="/">Quick Shop</a>
             </a>
             <div class="product-info">
-              <a href="/" class="product-name">City Backpack Black</a>
+              <h3><a href="/" class="product-name">City Backpack Black</a></h3>
               <span class="product-price">$55.00</span>
               <ul class="product-color">
                 <li><input type="radio" name="product-color" id="red" value="1"></li>
@@ -152,7 +196,7 @@
             </a>
             <div class="product-info">
               <a href="/" class="product-name">Spring – Summer Trending 2020</a>
-              <span class="product-author">By <strong>admin</strong> on <strong> April 6, 2020</strong></span>
+              <span class="product-author">By <strong>admin</strong> on <time> April 6, 2020</time></span>
               <p class="product-description">
                 Typography is the work of typesetters, compositors, typographers, graphic designers, art directors,
                 manga artists, ...
@@ -167,9 +211,15 @@
     <section class="section-slideshow">
       <h2 class="section-title">@ FOLLOW US ON INSTAGRAM</h2>
       <ul class="slideshow">
-        <li><img src="/" alt=""><a href="/"></a></li>
-        <li><img src="/" alt=""><a href="/"></a></li>
-        <li><img src="/" alt=""><a href="/"></a></li>
+        <li><img src="/" alt="">
+          <a href="/"></a>
+        </li>
+        <li><img src="/" alt="">
+          <a href="/"></a>
+        </li>
+        <li><img src="/" alt="">
+          <a href="/"></a>
+        </li>
       </ul>
     </section>
     <section class="section-info">
@@ -182,7 +232,7 @@
         <div class="info">
           <img src="/" alt="info-img" class="info-img">
           <h3 class="info-title">SUPPORT 24/7</h3>
-          <p class="info-content">Contact us 24 hours a day, 7 days a wee</p>
+          <p class="info-content">Contact us 24 hours a day, 7 days a week</p>
         </div>
       </div>
     </section>
@@ -205,9 +255,15 @@
           </div>
           <div class="footer-social">
             <ul class="social">
-              <li><a href="/"><img src="/" alt="facebook"></a></li>
-              <li><a href="/"><img src="/" alt="twitter"></a></li>
-              <li><a href="/"><img src="/" alt="instagram"></a></li>
+              <li>
+                <a href="/"><img src="/" alt="facebook"></a>
+              </li>
+              <li>
+                <a href="/"><img src="/" alt="twitter"></a>
+              </li>
+              <li>
+                <a href="/"><img src="/" alt="instagram"></a>
+              </li>
             </ul>
           </div>
         </aside>
@@ -242,13 +298,21 @@
           <p class="footer-paragraph">
             Subscribe to our newsletter and get 10% off your first purchase
           </p>
-          <input class="subcribe-email" type="text" name="email" id="email">
-          <input type="button" value="" class="btn btn-subcribe">
+          <form action="" class="form-control">
+            <input class="subcribe-email" type="text" name="email" id="email">
+            <input type="submit" value="" class="btn btn-subcribe">
+          </form>
           <div class="footer-paymethod">
             <ul class="paymethod">
-              <li><a href="/"><img src="/" alt=""></a></li>
-              <li><a href="/"><img src="/" alt=""></a></li>
-              <li><a href="/"><img src="/" alt=""></a></li>
+              <li>
+                <a href="/"><img src="/" alt=""></a>
+              </li>
+              <li>
+                <a href="/"><img src="/" alt=""></a>
+              </li>
+              <li>
+                <a href="/"><img src="/" alt=""></a>
+              </li>
             </ul>
           </div>
         </aside>
@@ -267,5 +331,4 @@
     </div>
   </footer>
 </body>
-
 </html>
