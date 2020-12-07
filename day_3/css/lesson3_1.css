@@ -1,77 +1,77 @@
 * {
-  box-sizing: border-box;
-  }
-  body {
+   box-sizing: border-box;
+}
+body {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   color: #333;
   background: #fff;
   margin: 0;
-  }
-  a {
+}
+a {
   color: #878787;
   text-decoration: none;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  img {
-    max-width: 100%;
-  }
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 100px;
-  }
-  .page-header {
-    padding: 0;
-    margin: 0;
-  }
-  .header-top {
-    padding: 10px 0;
-    background: #f6f6f8;
-    color: #878787;
-  }
-  .header-actions {
-    float: right;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-actions > li {
-    margin-left: 20px;
-  }
-  .header-actions > li i {
-    font-size: 20px;
-  }
-  .blur :hover {
-    opacity: 0.5;
-  }
-  .header-menu {
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-menu a {
-    display: inline-block;
-    position: relative;
-  }
-  .header-menu li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-  }
-  .header-menu a {
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-  }
-  .header-menu li:hover a,
-  .header-menu li.active a {
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.page-header {
+  padding: 0;
+  margin: 0;
+}
+.header-top {
+  padding: 10px 0;
+  background: #f6f6f8;
+  color: #878787;
+}
+.header-actions {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-actions > li {
+  margin-left: 20px;
+}
+.header-actions > li i {
+  font-size: 20px;
+}
+.blur :hover {
+  opacity: 0.5;
+}
+.header-menu {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-menu a {
+  display: inline-block;
+  position: relative;
+}
+.header-menu li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+.header-menu a {
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+.header-menu li:hover a,
+.header-menu li.active a {
   color: #3a8bcd;
 }
 .socials {
@@ -129,14 +129,10 @@
   display: table;
   clear: both;
 }
-.col-2,
 .col-3,
 .col-4 {
   float: left;
   padding: 0 15px;
-}
-.col-2{
-  width: 50%;
 }
 .col-3 {
   width: 25%;
