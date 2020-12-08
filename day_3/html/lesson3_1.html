@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +34,21 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
+        <div class="header-menu-mobile" onclick="openMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="drop-down">
+          <ul class="dropdown-content">
+            <li><a class="active" href="/">Shop</a></li>
+            <li><a href="/">Catalog</a></li>
+            <li><a href="/">Look Book</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
         <!-- Reusable purposes -->
         <ul class="socials">
           <li><a href="/" class="circle-element blur"><i class="fa fa-facebook"></i></a></li>
@@ -207,9 +223,9 @@
             <li ><a href="">Lorem, ipsum dolor</a></li>
           </ul>
         </div>
-        <div class="footer-middle-col col-3">
+        <div class="footer-middle-col col-2">
           <h3>Footer Map</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15349.7773395926!2d108.36905467861469!3d15.885775912196202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420da72517e9c1%3A0x6fe11657515916b!2zQ-G7rWEgxJDhuqFpLCBI4buZaSBBbiwgUXVhbmcgTmFtIFByb3ZpbmNlLCBWaWV0bmFt!5e0!3m2!1sen!2sus!4v1607265893678!5m2!1sen!2sus" width="500" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15349.7773395926!2d108.36905467861469!3d15.885775912196202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420da72517e9c1%3A0x6fe11657515916b!2zQ-G7rWEgxJDhuqFpLCBI4buZaSBBbiwgUXVhbmcgTmFtIFByb3ZpbmNlLCBWaWV0bmFt!5e0!3m2!1sen!2sus!4v1607265893678!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="footer-iframe"></iframe>
         </div>
       </div>
     </div>
@@ -219,6 +235,18 @@
       </div>
     </div>
   </footer>
+  <script>
+  var statusMenu = false;
+  function openMenu() {
+    statusMenu = !statusMenu;
+    var element = document.getElementById('drop-down');
+    if (statusMenu) {
+      element.setAttribute(display, block);
+    } else {
+      element.setAttribute(display, none);
+    }
+  }
+  </script>
 </body>
 
 </html>
