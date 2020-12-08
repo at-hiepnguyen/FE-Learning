@@ -266,7 +266,7 @@ img {
 .text-align-center {
   text-align: center;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   body {
     font-size: 13px;
   }
@@ -280,7 +280,7 @@ img {
     height: 60px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .col-4 {
     width: 50%;
   }
@@ -297,5 +297,26 @@ img {
     float: left;
     display: block;
     margin: 20px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .col-4 {
+    width: 100%;
+  }
+  .section-banner-txt h2 {
+    font-size: 16px;
+  }
+  .section-banner-txt p {
+    font-size: 10px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .partner-item {
+    height: 20px;
+  }
+  .footer-top .socials {
+    float: left;
+    height: 40px;
   }
 }
