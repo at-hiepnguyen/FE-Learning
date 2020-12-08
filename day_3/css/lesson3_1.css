@@ -55,14 +55,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 74px;
 }
 .header-menu a {
   display: inline-block;
   position: relative;
 }
-.header-menu li {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.header-menu > li {
+  margin: 20px 0;
   padding-right: 30px;
 }
 .header-menu a {
@@ -267,6 +267,12 @@ img {
   text-align: center;
 }
 @media only screen and (max-width: 1024px) {
+  body {
+    font-size: 13px;
+  }
+  .header-menu li {
+    padding-right: 2em;
+  }
   .product-img {
     height: 265px;
   }
