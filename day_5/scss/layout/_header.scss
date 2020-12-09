@@ -1,0 +1,77 @@
+.page-header {
+  @include pxRem(padding, 0);
+  @include pxRem(margin, 0);
+
+  .header-top {
+    @include pxRem(padding, 10 0);
+    background: map-get($color, header-top-background-);
+    color: map-get($color, header-background);
+
+    .header-action {
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        @include pxRem(margin-right, 20);
+        @include pxRem(font-size, 20);
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .header-nav {
+    @include pxRem(padding, 10, 0);
+    background: map-get($color, header-nav-background);
+    color: map-get($color, header-background);
+
+    .header-menu {
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include respond-below(large) {
+        li {
+          padding-right: 2em;
+        }
+      }
+
+      li {
+        @include pxRem(padding-top, 20);
+        @include pxRem(padding-bottom, 20);
+        @include pxRem(padding-right, 30);
+
+        a {
+          display: inline-block;
+          position: relative;
+          &:hover {
+            color: map-get($color , header-link);
+          }
+        }
+      }
+    }
+
+    .socials {
+      float: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        @include pxRem(margin, 20 0);
+        @include  pxRem(margin-right, 20);
+
+        i {
+          @include pxRem(font-size, 20);
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
